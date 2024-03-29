@@ -18,7 +18,7 @@ td{
 }
 .mobileForm{
     background-color: white;
-    width: 600px;
+    width: 35rem;
     padding: 20px 50px;
     border-radius: 5px;
 }
@@ -36,9 +36,13 @@ td{
     display: flex;
     justify-content: space-between;
     color: white;
+    width: 100%;
     padding: 15px 30px;
 }
 .add{
     background-color: rgb(76, 187, 76);
     color: white;
+}
+.container{
+    width: 100%;
 }

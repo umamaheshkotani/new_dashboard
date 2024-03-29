@@ -1,32 +1,33 @@
-<div class="container" *ngIf="clothes">
+<div class="container-fluid w-100" *ngIf="clothes">
     <div class="header">
         <h2>Fashion Data List</h2>
         <button class="btn add" (click)="openForm()">Add New</button>
     </div>
-    <table class="table table-bordered">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Price</th>
-                <th>Category</th>
-                <th colspan="2">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let c of clothes">
-                <td>{{c.id}}</td>
-                <td>{{c.title}}</td>
-                <td>{{c.price}}</td>
-                <td>{{c.category}}</td>
-                <td class="d-flex">
-                    <button class="btn btn-primary me-2" (click)="openForm(c)">Edit</button>
-                    <button class="btn btn-danger" (click)="deleteEntry(c.id)">Delete</button>
-                </td>
-            </tr>
-
-        </tbody>
-    </table>
+    <div class="table-responsive">
+        <table class="table w-100 table-bordered table-hover table-responsive">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th colspan="2">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let c of clothes">
+                    <td>{{c.id}}</td>
+                    <td>{{c.title}}</td>
+                    <td>{{c.price}}</td>
+                    <td>{{c.category}}</td>
+                    <td class="d-flex">
+                        <button class="btn btn-primary me-2" (click)="openForm(c)">Edit</button>
+                        <button class="btn btn-danger" (click)="deleteEntry(c.id)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
 
 <div class="form-wrapper" *ngIf="showForm">
