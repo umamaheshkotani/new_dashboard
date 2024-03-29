@@ -1,0 +1,44 @@
+th{
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+.mobileForm{
+    background-color: white;
+    width: 600px;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+.group{
+    display: flex;
+    margin: 15px 0;
+}
+.group label{
+    width: 100px;
+    line-height: 40px;
+    height: 40px;
+}
+.header{
+    background-color: rgb(13, 119, 190);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 15px 30px;
+}
+.add{
+    background-color: rgb(76, 187, 76);
+    color: white;
+}
