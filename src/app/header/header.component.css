@@ -12,3 +12,17 @@ nav{
     background-color: grey;
     border-radius: 30%;
 }
+.navbar {
+    position: relative;
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar-collapse {
+ 
+    z-index: 999; /* Ensure the collapsed menu is above other content */
+    display: none; /* Hide the collapsed menu by default */
+}
+
+.navbar-collapse.show {
+    display: block; /* Show the collapsed menu when toggled */
+}
